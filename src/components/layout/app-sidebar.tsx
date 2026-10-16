@@ -10,7 +10,7 @@ import {
   LifeBuoy,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
+import { ExternalLink, ShieldCheck } from "lucide-react";
 const navigation = [
   { title: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { title: "RFQ Invitations", href: "/rfqs", icon: FileText },
@@ -68,7 +68,22 @@ export function AppSidebar({ onNavigate }: { onNavigate?: () => void }) {
           );
         })}
       </nav>
+      <div className="mt-6 border-t border-border pt-5">
+        <p className="mb-3 px-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          Other Portals
+        </p>
 
+        <a
+          href="https://bushrabuchi.github.io/procureAI-platform/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium text-muted-foreground transition-all hover:bg-accent hover:text-accent-foreground"
+        >
+          <ShieldCheck className="size-5" />
+          <span>Admin Portal</span>
+          <ExternalLink className="ml-auto size-4" />
+        </a>
+      </div>
       <div className="border-t border-white/10 p-4">
         <div className="rounded-xl border border-white/10 bg-white/[0.03] p-3.5">
           <div className="flex items-center gap-2 text-xs font-semibold text-white">
