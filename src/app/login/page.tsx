@@ -62,11 +62,11 @@ export default function LoginPage() {
 
         <Card className="overflow-hidden border-border/70 py-0 shadow-xl shadow-slate-900/5">
           <div className="grid md:grid-cols-[0.9fr_1.1fr]">
-            <aside className="relative hidden flex-col justify-between overflow-hidden bg-slate-950 p-6 text-white md:flex lg:p-10">
-              <div className="absolute -right-20 top-20 size-64 rounded-full border border-emerald-300/10" />
-              <div className="absolute -right-8 top-32 size-40 rounded-full border border-emerald-300/10" />
+            <aside className="relative hidden flex-col justify-between overflow-hidden bg-supplier-panel p-6 text-white md:flex lg:p-10">
+              <div className="absolute -right-20 top-20 size-64 rounded-full border border-supplier-accent/10" />
+              <div className="absolute -right-8 top-32 size-40 rounded-full border border-supplier-accent/10" />
               <div className="relative">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Supplier workspace</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-supplier-accent">Supplier workspace</p>
                 <h1 className="mt-5 max-w-sm text-3xl font-semibold leading-tight tracking-tight">
                   Good business starts with a better connection.
                 </h1>
